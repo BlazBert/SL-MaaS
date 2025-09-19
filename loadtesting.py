@@ -15,7 +15,7 @@ def make_request(url: str, data: List) -> Tuple[float, any]:
         print(f'Error: {response.status_code}')
 
     if not response.json()['pred']:
-        print('Error: Response is empty')
+        print('Error: Response is empty ')
 
     return rtt, response.json()["pred"]
 
